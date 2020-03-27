@@ -6,7 +6,7 @@
 import pandas as pd
 
 INPUT_FILE = "data.csv"
-OUTPUT_FILE = "dist/data.js"
+OUTPUT_FILE = "data.js"
 data = pd.read_csv(INPUT_FILE, names=["State", "County", "Cases", "Deaths", "Population"]).fillna('')
 data["Total"] = data["Cases"] + data["Deaths"]
 
