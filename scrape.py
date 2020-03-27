@@ -2,9 +2,7 @@
 # Author: Ben Kallus
 # Purpose: Grabs the latest COVID-19 data from nytimes.com and formats it into a csv
 
-
 from selenium import webdriver
-from time import sleep
 
 STATES = ["Alabama", "American Samoa", "Northern Mariana Islands", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 
@@ -15,9 +13,11 @@ class DataNode:
         self.county = ""
         self.cases = 0
         self.deaths = 0
+        self.population = None
 
     def __str__(self):
-        return ",".join([self.state, self.county, str(self.cases), str(self.deaths)])
+        return ",".join([self.state, self.county, str(self.cases), str(self.deaths), str(self.population) if self.population is not None else ""])
+
 
 def main():
     browser = webdriver.Firefox()
@@ -46,6 +46,16 @@ def main():
     lines = table.text.split("\n")[1:]
     browser.quit() # Done with this now
 
+    # Grab the census population data
+    populations = {}
+
+    for line in open("populations.csv", "r").readlines():
+        trio = line.split(",")
+        if trio[1] not in populations:
+            populations[trio[1]] = {}
+
+        populations[trio[1]][trio[0]] = trio[2]
+
     nodes = []
     for line in lines:
         orig = line
@@ -67,24 +77,22 @@ def main():
         if node.county == "Unknown":
             continue
 
+        if node.county != "":
+            try:
+                node.population = int(populations[node.state][node.county])
+            except:
+                # print(node.county, node.state, "isn't here!")
+                pass
+
         line = line.replace(",", "")
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
 
         nodes.append(node)
-    
+
 
     open("data.csv", "w+").write("\n".join([str(node) for node in nodes]))
 
 
 if __name__ == "__main__":
     main()
-
-"""
-To do:
-
-    - Filter out unknown
-    - Per capita
-    - Website
-
-"""
