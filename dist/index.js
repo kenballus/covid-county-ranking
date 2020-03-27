@@ -1,7 +1,6 @@
 
 $(document).ready(() => {
     $('select').formSelect();
-    var instance = M.FormSelect.getInstance($('select').get(0))
 
     renderData(table_data);
     $('select').on("change", (e) => {
@@ -24,6 +23,7 @@ function renderData(data) {
                                "</td><td>" + row[1] + 
                                "</td><td>" + row[2] + 
                                "</td><td>" + row[3] + 
+                               "</td><td>" + row[4] + 
                                "</td></tr>");
     }
 }
