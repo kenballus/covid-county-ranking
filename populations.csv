@@ -65,6 +65,35 @@ Walker,Alabama,63521
 Washington,Alabama,16326
 Wilcox,Alabama,10373
 Winston,Alabama,23629
+Aleutians East Borough,Alaska,3337
+Aleutians West Census Area,Alaska,5634
+Anchorage Municipality,Alaska,288000
+Bethel Census Area,Alaska,18386
+Bristol Bay Borough,Alaska,836
+Denali Borough,Alaska,2097
+Dillingham Census Area,Alaska,4916
+Fairbanks North Star Borough,Alaska,96849
+Haines Borough,Alaska,2530
+Hoonah-Angoon Census Area,Alaska,2148
+Juneau City and Borough,Alaska,31974
+Kenai Peninsula Borough,Alaska,58708
+Ketchikan Gateway Borough,Alaska,13901
+Kodiak Island Borough,Alaska,12998
+Kusilvak Census Area,Alaska,8314
+Lake and Peninsula Borough,Alaska,1592
+Matanuska-Susitna Borough,Alaska,108317
+Nome Census Area,Alaska,10004
+North Slope Borough,Alaska,9832
+Northwest Arctic Borough,Alaska,7621
+Petersburg Borough,Alaska,3266
+Prince of Wales-Hyder Census Area,Alaska,6203
+Sitka City and Borough,Alaska,8493
+Skagway Municipality,Alaska,1183
+Southeast Fairbanks Census Area,Alaska,6893
+Valdez-Cordova Census Area,Alaska,9202
+Wrangell City and Borough,Alaska,2502
+Yakutat City and Borough,Alaska,579
+Yukon-Koyukuk Census Area,Alaska,5230
 Apache,Arizona,71887
 Cochise,Arizona,125922
 Coconino,Arizona,143476
@@ -288,6 +317,7 @@ Windham,Connecticut,116782
 Kent,Delaware,180786
 New Castle,Delaware,558753
 Sussex,Delaware,234225
+District of Columbia,District of Columbi,705749
 Alachua,Florida,269043
 Baker,Florida,29210
 Bay,Florida,174705
@@ -1081,6 +1111,70 @@ Webster,Kentucky,12942
 Whitley,Kentucky,36264
 Wolfe,Kentucky,7157
 Woodford,Kentucky,26734
+Acadia,Louisiana,62045
+Allen,Louisiana,25627
+Ascension,Louisiana,126604
+Assumption,Louisiana,21891
+Avoyelles,Louisiana,40144
+Beauregard,Louisiana,37497
+Bienville,Louisiana,13241
+Bossier,Louisiana,127039
+Caddo,Louisiana,240204
+Calcasieu,Louisiana,203436
+Caldwell,Louisiana,9918
+Cameron,Louisiana,6973
+Catahoula,Louisiana,9494
+Claiborne,Louisiana,15670
+Concordia,Louisiana,19259
+De Soto,Louisiana,27463
+East Baton Rouge,Louisiana,440059
+East Carroll,Louisiana,6861
+East Feliciana,Louisiana,19135
+Evangeline,Louisiana,33395
+Franklin,Louisiana,20015
+Grant,Louisiana,22389
+Iberia,Louisiana,69830
+Iberville,Louisiana,32511
+Jackson,Louisiana,15744
+Jefferson,Louisiana,432493
+Jefferson Davis,Louisiana,31368
+Lafayette,Louisiana,244390
+Lafourche,Louisiana,97614
+LaSalle,Louisiana,14892
+Lincoln,Louisiana,46742
+Livingston,Louisiana,140789
+Madison,Louisiana,10951
+Morehouse,Louisiana,24874
+Natchitoches,Louisiana,38158
+Orleans,Louisiana,390144
+Ouachita,Louisiana,153279
+Plaquemines,Louisiana,23197
+Pointe Coupee,Louisiana,21730
+Rapides,Louisiana,129648
+Red River,Louisiana,8442
+Richland,Louisiana,20122
+Sabine,Louisiana,23884
+St. Bernard,Louisiana,47244
+St. Charles,Louisiana,53100
+St. Helena,Louisiana,10132
+St. James,Louisiana,21096
+St. John the Baptist,Louisiana,42837
+St. Landry,Louisiana,82124
+St. Martin,Louisiana,53431
+St. Mary,Louisiana,49348
+St. Tammany,Louisiana,260419
+Tangipahoa,Louisiana,134758
+Tensas,Louisiana,4334
+Terrebonne,Louisiana,110461
+Union,Louisiana,22108
+Vermilion,Louisiana,59511
+Vernon,Louisiana,47429
+Washington,Louisiana,46194
+Webster,Louisiana,38340
+West Baton Rouge,Louisiana,26465
+West Carroll,Louisiana,10830
+West Feliciana,Louisiana,15568
+Winn,Louisiana,13904
 Androscoggin,Maine,108277
 Aroostook,Maine,67055
 Cumberland,Maine,295003
@@ -1120,6 +1214,7 @@ Talbot,Maryland,37181
 Washington,Maryland,151049
 Wicomico,Maryland,103609
 Worcester,Maryland,52276
+Baltimore city,Maryland,593490
 Barnstable,Massachusetts,212990
 Berkshire,Massachusetts,124944
 Bristol,Massachusetts,565217
@@ -1500,6 +1595,7 @@ Wayne,Missouri,12873
 Webster,Missouri,39592
 Worth,Missouri,2013
 Wright,Missouri,18289
+St. Louis city,Missouri,300576
 Beaverhead,Montana,9453
 Big Horn,Montana,13319
 Blaine,Montana,6681
@@ -1665,6 +1761,7 @@ Pershing,Nevada,6725
 Storey,Nevada,4123
 Washoe,Nevada,471519
 White Pine,Nevada,9580
+Carson City,Nevada,55916
 Belknap,New Hampshire,61303
 Carroll,New Hampshire,48910
 Cheshire,New Hampshire,76085
@@ -1895,7 +1992,7 @@ Adams,North Dakota,2216
 Barnes,North Dakota,10415
 Benson,North Dakota,6832
 Billings,North Dakota,928
-ottineau,North Dakota,6282
+Bottineau,North Dakota,6282
 Bowman,North Dakota,3024
 Burke,North Dakota,2115
 Burleigh,North Dakota,95626
@@ -2816,6 +2913,44 @@ Westmoreland,Virginia,18015
 Wise,Virginia,37383
 Wythe,Virginia,28684
 York,Virginia,68280
+Alexandria city,Virginia,159428
+Bristol city,Virginia,16762
+Buena Vista city,Virginia,6478
+Charlottesville city,Virginia,47266
+Chesapeake city,Virginia,244835
+Colonial Heights city,Virginia,17370
+Covington city,Virginia,5538
+Danville city,Virginia,40044
+Emporia city,Virginia,5346
+Fairfax city,Virginia,24019
+Falls Church city,Virginia,14617
+Franklin city,Virginia,7967
+Fredericksburg city,Virginia,29036
+Galax city,Virginia,6347
+Hampton city,Virginia,134510
+Harrisonburg city,Virginia,53016
+Hopewell city,Virginia,22529
+Lexington city,Virginia,7446
+Lynchburg city,Virginia,82168
+Manassas city,Virginia,41085
+Manassas Park city,Virginia,17478
+Martinsville city,Virginia,12554
+Newport News city,Virginia,179225
+Norfolk city,Virginia,242742
+Norton city,Virginia,3981
+Petersburg city,Virginia,31346
+Poquoson city,Virginia,12271
+Portsmouth city,Virginia,94398
+Radford city,Virginia,18249
+Richmond city,Virginia,230436
+Roanoke city,Virginia,99143
+Salem city,Virginia,25301
+Staunton city,Virginia,24932
+Suffolk city,Virginia,92108
+Virginia Beach city,Virginia,449974
+Waynesboro city,Virginia,22630
+Williamsburg city,Virginia,14954
+Winchester city,Virginia,28078
 Adams,Washington,19983
 Asotin,Washington,22582
 Benton,Washington,204390
@@ -3005,3 +3140,6 @@ Teton,Wyoming,23464
 Uinta,Wyoming,20226
 Washakie,Wyoming,7805
 Weston,Wyoming,6927
+New York City,New York,8336817
+Anchorage,Alaska,288000
+Kansas City,Missouri,491918

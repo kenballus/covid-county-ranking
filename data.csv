@@ -50,12 +50,12 @@ Alabama,Walker,23,0,63521
 Alabama,Washington,2,0,16326
 Alabama,Wilcox,2,0,10373
 Alabama,Winston,2,0,23629
-Alaska,Anchorage,33,0,
-Alaska,Fairbanks North Star Borough,15,0,
-Alaska,Juneau City and Borough,3,0,
-Alaska,Kenai Peninsula Borough,5,0,
-Alaska,Ketchikan Gateway Borough,11,0,
-Alaska,Matanuska-Susitna Borough,2,0,
+Alaska,Anchorage,33,0,288000
+Alaska,Fairbanks North Star Borough,15,0,96849
+Alaska,Juneau City and Borough,3,0,31974
+Alaska,Kenai Peninsula Borough,5,0,58708
+Alaska,Ketchikan Gateway Borough,11,0,13901
+Alaska,Matanuska-Susitna Borough,2,0,108317
 Arizona,Apache,11,0,71887
 Arizona,Cochise,2,0,125922
 Arizona,Coconino,41,2,143476
@@ -605,60 +605,60 @@ Kentucky,Union,1,0,14381
 Kentucky,Warren,7,0,132896
 Kentucky,Wayne,1,0,20333
 Kentucky,Webster,1,0,12942
-Louisiana,Acadia,8,1,
-Louisiana,Allen,5,0,
-Louisiana,Ascension,90,1,
-Louisiana,Assumption,8,0,
-Louisiana,Avoyelles,10,0,
-Louisiana,Beauregard,4,0,
-Louisiana,Bienville,1,1,
-Louisiana,Bossier,37,0,
-Louisiana,Caddo,140,2,
-Louisiana,Calcasieu,22,1,
-Louisiana,Catahoula,1,1,
-Louisiana,Claiborne,3,0,
-Louisiana,De Soto,13,1,
-Louisiana,East Baton Rouge,124,4,
-Louisiana,East Feliciana,5,0,
-Louisiana,Evangeline,4,0,
-Louisiana,Grant,1,0,
-Louisiana,Iberia,4,0,
-Louisiana,Iberville,20,1,
-Louisiana,Jackson,3,0,
-Louisiana,Jefferson,548,24,
-Louisiana,Jefferson Davis,1,0,
-Louisiana,Lafayette,44,0,
-Louisiana,Lafourche,30,2,
-Louisiana,LaSalle,1,0,
-Louisiana,Lincoln,7,0,
-Louisiana,Livingston,11,0,
-Louisiana,Madison,1,0,
-Louisiana,Morehouse,2,0,
-Louisiana,Natchitoches,2,0,
-Louisiana,Orleans,1170,57,
-Louisiana,Ouachita,25,1,
-Louisiana,Plaquemines,16,2,
-Louisiana,Pointe Coupee,1,0,
-Louisiana,Rapides,26,1,
-Louisiana,Richland,2,0,
-Louisiana,St. Bernard,31,1,
-Louisiana,St. Charles,23,2,
-Louisiana,St. James,40,3,
-Louisiana,St. John the Baptist,41,3,
-Louisiana,St. Landry,10,0,
-Louisiana,St. Martin,10,3,
-Louisiana,St. Mary,6,0,
-Louisiana,St. Tammany,111,2,
-Louisiana,Tangipahoa,7,0,
-Louisiana,Terrebonne,23,1,
-Louisiana,Union,4,0,
-Louisiana,Vermilion,2,0,
-Louisiana,Vernon,2,0,
-Louisiana,Washington,8,1,
-Louisiana,Webster,9,1,
-Louisiana,West Baton Rouge,11,1,
-Louisiana,West Feliciana,1,0,
-Louisiana,Winn,1,0,
+Louisiana,Acadia,8,1,62045
+Louisiana,Allen,5,0,25627
+Louisiana,Ascension,90,1,126604
+Louisiana,Assumption,8,0,21891
+Louisiana,Avoyelles,10,0,40144
+Louisiana,Beauregard,4,0,37497
+Louisiana,Bienville,1,1,13241
+Louisiana,Bossier,37,0,127039
+Louisiana,Caddo,140,2,240204
+Louisiana,Calcasieu,22,1,203436
+Louisiana,Catahoula,1,1,9494
+Louisiana,Claiborne,3,0,15670
+Louisiana,De Soto,13,1,27463
+Louisiana,East Baton Rouge,124,4,440059
+Louisiana,East Feliciana,5,0,19135
+Louisiana,Evangeline,4,0,33395
+Louisiana,Grant,1,0,22389
+Louisiana,Iberia,4,0,69830
+Louisiana,Iberville,20,1,32511
+Louisiana,Jackson,3,0,15744
+Louisiana,Jefferson,548,24,432493
+Louisiana,Jefferson Davis,1,0,31368
+Louisiana,Lafayette,44,0,244390
+Louisiana,Lafourche,30,2,97614
+Louisiana,LaSalle,1,0,14892
+Louisiana,Lincoln,7,0,46742
+Louisiana,Livingston,11,0,140789
+Louisiana,Madison,1,0,10951
+Louisiana,Morehouse,2,0,24874
+Louisiana,Natchitoches,2,0,38158
+Louisiana,Orleans,1170,57,390144
+Louisiana,Ouachita,25,1,153279
+Louisiana,Plaquemines,16,2,23197
+Louisiana,Pointe Coupee,1,0,21730
+Louisiana,Rapides,26,1,129648
+Louisiana,Richland,2,0,20122
+Louisiana,St. Bernard,31,1,47244
+Louisiana,St. Charles,23,2,53100
+Louisiana,St. James,40,3,21096
+Louisiana,St. John the Baptist,41,3,42837
+Louisiana,St. Landry,10,0,82124
+Louisiana,St. Martin,10,3,53431
+Louisiana,St. Mary,6,0,49348
+Louisiana,St. Tammany,111,2,260419
+Louisiana,Tangipahoa,7,0,134758
+Louisiana,Terrebonne,23,1,110461
+Louisiana,Union,4,0,22108
+Louisiana,Vermilion,2,0,59511
+Louisiana,Vernon,2,0,47429
+Louisiana,Washington,8,1,46194
+Louisiana,Webster,9,1,38340
+Louisiana,West Baton Rouge,11,1,26465
+Louisiana,West Feliciana,1,0,15568
+Louisiana,Winn,1,0,13904
 Maine,Androscoggin,6,0,108277
 Maine,Cumberland,92,1,295003
 Maine,Franklin,1,0,30199
@@ -672,7 +672,7 @@ Maine,Waldo,2,0,39715
 Maine,York,33,0,207641
 Maryland,Anne Arundel,63,0,579234
 Maryland,Baltimore,88,1,827370
-Maryland,Baltimore city,103,0,
+Maryland,Baltimore city,103,0,593490
 Maryland,Calvert,9,0,92525
 Maryland,Caroline,1,0,33406
 Maryland,Carroll,9,0,168447
@@ -897,7 +897,7 @@ Missouri,Jackson,41,1,703011
 Missouri,Jasper,2,0,121328
 Missouri,Jefferson,15,0,225081
 Missouri,Johnson,8,0,54062
-Missouri,Kansas City,78,0,
+Missouri,Kansas City,78,0,491918
 Missouri,Lafayette,4,0,32708
 Missouri,Lincoln,2,0,59013
 Missouri,McDonald,1,0,22837
@@ -916,7 +916,7 @@ Missouri,Shelby,1,0,5930
 Missouri,St. Charles,32,1,402022
 Missouri,St. Francois,4,0,67215
 Missouri,St. Louis,247,1,994205
-Missouri,St. Louis city,72,1,
+Missouri,St. Louis city,72,1,300576
 Missouri,Stoddard,1,0,29025
 Missouri,Taney,1,0,55928
 Missouri,Texas,1,0,25398
@@ -955,7 +955,7 @@ Nebraska,Nemaha,1,0,6972
 Nebraska,Sarpy,7,0,187196
 Nebraska,Saunders,2,0,21578
 Nebraska,Washington,5,0,20729
-Nevada,Carson City,4,0,
+Nevada,Carson City,4,0,55916
 Nevada,Clark,443,10,2266715
 Nevada,Douglas,3,0,48905
 Nevada,Elko,2,0,52778
@@ -1033,7 +1033,7 @@ New York,Madison,9,0,70941
 New York,Monroe,160,4,741770
 New York,Montgomery,5,0,49221
 New York,Nassau,4657,27,1356924
-New York,New York City,25399,366,
+New York,New York City,25399,366,8336817
 New York,Niagara,14,0,209281
 New York,Oneida,13,0,228671
 New York,Onondaga,83,0,460528
@@ -1549,34 +1549,34 @@ Vermont,Windsor,18,1,55062
 Virgin Islands,,17,0,
 Virginia,Accomack,2,0,32316
 Virginia,Albemarle,8,0,109330
-Virginia,Alexandria city,18,0,
+Virginia,Alexandria city,18,0,159428
 Virginia,Amelia,1,0,13145
 Virginia,Amherst,1,0,31605
 Virginia,Arlington,63,0,236842
 Virginia,Bedford,2,0,78997
 Virginia,Botetourt,1,0,33419
-Virginia,Bristol city,1,0,
+Virginia,Bristol city,1,0,16762
 Virginia,Charles City,1,0,6963
-Virginia,Charlottesville city,11,0,
-Virginia,Chesapeake city,5,0,
+Virginia,Charlottesville city,11,0,47266
+Virginia,Chesapeake city,5,0,244835
 Virginia,Chesterfield,12,0,352802
 Virginia,Culpeper,2,0,52605
-Virginia,Danville city,4,0,
+Virginia,Danville city,4,0,40044
 Virginia,Fairfax,124,1,1147532
-Virginia,Fairfax city,1,0,
+Virginia,Fairfax city,1,0,24019
 Virginia,Fauquier,4,0,71222
 Virginia,Fluvanna,3,0,27270
 Virginia,Franklin,1,0,56042
 Virginia,Frederick,4,0,89313
-Virginia,Fredericksburg city,1,0,
-Virginia,Galax city,1,0,
+Virginia,Fredericksburg city,1,0,29036
+Virginia,Galax city,1,0,6347
 Virginia,Gloucester,3,0,37348
 Virginia,Goochland,3,0,23753
 Virginia,Greene,1,0,19819
 Virginia,Halifax,1,0,33911
-Virginia,Hampton city,5,0,
+Virginia,Hampton city,5,0,134510
 Virginia,Hanover,2,0,107766
-Virginia,Harrisonburg city,5,0,
+Virginia,Harrisonburg city,5,0,53016
 Virginia,Henrico,28,3,330818
 Virginia,Isle of Wight,2,0,37109
 Virginia,James City,55,3,76523
@@ -1584,38 +1584,38 @@ Virginia,King George,1,0,26836
 Virginia,Lee,2,0,23423
 Virginia,Loudoun,43,0,413538
 Virginia,Louisa,5,0,37591
-Virginia,Lynchburg city,2,0,
+Virginia,Lynchburg city,2,0,82168
 Virginia,Madison,2,0,13261
-Virginia,Manassas city,3,0,
+Virginia,Manassas city,3,0,41085
 Virginia,Mathews,1,0,8834
 Virginia,Mecklenburg,4,0,30587
 Virginia,Nelson,1,0,14930
-Virginia,Newport News city,12,1,
-Virginia,Norfolk city,8,0,
+Virginia,Newport News city,12,1,179225
+Virginia,Norfolk city,8,0,242742
 Virginia,Northampton,1,0,11710
 Virginia,Nottoway,1,0,15232
 Virginia,Orange,1,0,37051
 Virginia,Pittsylvania,1,0,60354
-Virginia,Poquoson city,1,0,
-Virginia,Portsmouth city,3,0,
+Virginia,Poquoson city,1,0,12271
+Virginia,Portsmouth city,3,0,94398
 Virginia,Prince Edward,2,0,22802
 Virginia,Prince George,2,0,38353
 Virginia,Prince William,44,0,470335
-Virginia,Radford city,1,0,
-Virginia,Richmond city,17,0,
+Virginia,Radford city,1,0,18249
+Virginia,Richmond city,17,0,230436
 Virginia,Roanoke,1,0,94186
-Virginia,Roanoke city,1,0,
+Virginia,Roanoke city,1,0,99143
 Virginia,Rockbridge,1,0,22573
 Virginia,Rockingham,4,0,81948
 Virginia,Shenandoah,3,0,43616
 Virginia,Southampton,1,0,17631
 Virginia,Spotsylvania,3,0,136215
 Virginia,Stafford,11,0,152882
-Virginia,Suffolk city,1,0,
-Virginia,Virginia Beach city,29,0,
+Virginia,Suffolk city,1,0,92108
+Virginia,Virginia Beach city,29,0,449974
 Virginia,Warren,2,0,40164
 Virginia,Washington,1,0,53740
-Virginia,Williamsburg city,5,1,
+Virginia,Williamsburg city,5,1,14954
 Virginia,York,9,0,68280
 Washington,Adams,3,0,19983
 Washington,Benton,19,4,204390

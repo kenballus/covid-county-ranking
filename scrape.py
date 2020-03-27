@@ -81,7 +81,7 @@ def main():
             try:
                 node.population = int(populations[node.state][node.county])
             except:
-                # print(node.county, node.state, "isn't here!")
+                print(node.county, node.state, "isn't here!")
                 pass
 
         line = line.replace(",", "")
