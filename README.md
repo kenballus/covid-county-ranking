@@ -7,3 +7,4 @@ If you want to run scrape.py, you'll need to install firefox and geckodriver, an
 
 1. selenium
 2. pandas
+3. xlrd
