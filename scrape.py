@@ -91,6 +91,8 @@ def main():
         nodes.append(node)
 
 
+    nodes = sorted(nodes, key=lambda node: node.cases + node.deaths, reverse=True)
+
     open("data.csv", "w+").write("\n".join([str(node) for node in nodes]))
 
 
