@@ -23,6 +23,8 @@ function renderData(data) {
                                "</td><td>" + data[i][2] + 
                                "</td><td>" + data[i][3] + 
                                "</td><td>" + data[i][4] + 
+                               "</td><td>" + data[i][5] +
+                               "</td><td>" + data[i][6] +
                                "</td></tr>");
     }
 }
