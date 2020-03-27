@@ -1,3 +1,8 @@
+# File: scrape.py
+# Author: Ben Kallus
+# Purpose: Grabs the latest COVID-19 data from nytimes.com and formats it into a csv
+
+
 from selenium import webdriver
 from time import sleep
 
