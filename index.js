@@ -19,7 +19,7 @@ function renderData(data) {
     for (var i = 0; i < data.length; i++) {
         $("#main_body").append("<tr><td>"+ (i + 1) + "</td>" +
                                "<td>" + data[i][1] + 
-                               "</td><td>" + data[i][2] + 
+                               "</td><td>" + data[i][0] + 
                                "</td><td>" + data[i][2] + 
                                "</td><td>" + data[i][3] + 
                                "</td><td>" + data[i][4] + 
