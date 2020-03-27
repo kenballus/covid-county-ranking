@@ -10,6 +10,8 @@ data = pd.read_csv(INPUT_FILE, names=["State", "County", "Cases", "Deaths", "Pop
 data["Cases Per Capita"] = data["Cases"] / data["Population"]
 data["Deaths Per Capita"] = data["Deaths"] / data["Population"]
 
+print(data)
+
 with open(OUTPUT_FILE, 'w') as f:
     f.write("var table_data = ")
     f.write(str(data.values.tolist()))

@@ -13,10 +13,10 @@ class DataNode:
         self.county = ""
         self.cases = 0
         self.deaths = 0
-        self.population = None
+        self.population = 0
 
     def __str__(self):
-        return ",".join([self.state, self.county, str(self.cases), str(self.deaths), str(self.population) if self.population is not None else ""])
+        return ",".join([self.state, self.county, str(self.cases), str(self.deaths), str(self.population)])
 
 
 def main():

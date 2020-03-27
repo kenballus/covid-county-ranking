@@ -43,7 +43,7 @@ California,Orange,321,3,3175692
 Georgia,Fulton,307,12,1063937
 Colorado,Denver,312,3,727211
 Tennessee,Davidson,312,2,694144
-District of Columbia,,267,3,
+District of Columbia,,267,3,0
 Missouri,St. Louis,247,1,994205
 California,San Mateo,239,6,766573
 California,Alameda,236,4,1671329
@@ -138,7 +138,7 @@ North Carolina,Durham,83,0,321488
 New Mexico,Bernalillo,82,0,679121
 New York,Saratoga,82,0,229863
 Pennsylvania,Northampton,79,3,305285
-Puerto Rico,,79,3,
+Puerto Rico,,79,3,0
 Washington,Clark,76,6,488241
 Florida,Collier,81,0,384902
 Colorado,Douglas,79,0,351154
@@ -188,7 +188,7 @@ Pennsylvania,Luzerne,55,2,317417
 Ohio,Lorain,56,0,309833
 Georgia,Carroll,55,0,119992
 California,San Luis Obispo,54,0,283111
-Guam,,53,1,
+Guam,,53,1,0
 Idaho,Ada,54,0,481587
 Florida,Osceola,53,0,375751
 Indiana,Hamilton,53,0,338011
@@ -364,7 +364,7 @@ Tennessee,Wilson,20,0,144657
 Ohio,Montgomery,19,0,531687
 Texas,Lubbock,19,0,310569
 Vermont,Windsor,18,1,55062
-Virgin Islands,,19,0,
+Virgin Islands,,19,0,0
 Wisconsin,Fond du Lac,18,1,103403
 Alabama,Montgomery,18,0,226486
 Kansas,Douglas,18,0,122259

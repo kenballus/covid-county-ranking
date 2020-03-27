@@ -18,13 +18,13 @@ function renderData(data) {
     $("#main_body").html("")
     for (var i = 0; i < data.length; i++) {
         $("#main_body").append("<tr><td>"+ (i + 1) + "</td>" +
-                               "<td>" + data[i][1] + 
-                               "</td><td>" + data[i][0] + 
-                               "</td><td>" + data[i][2] + 
-                               "</td><td>" + data[i][3] + 
-                               "</td><td>" + data[i][4] + 
-                               "</td><td>" + data[i][5] +
-                               "</td><td>" + data[i][6] +
+                               "<td>" + data[i][1] +  // County
+                               "</td><td>" + data[i][0] + // State
+                               "</td><td>" + data[i][4] + // Population
+                               "</td><td>" + data[i][2] + // Cases
+                               "</td><td>" + data[i][3] + // Deaths
+                               "</td><td>" + data[i][5] + // Cases per capita
+                               "</td><td>" + data[i][6] + // Deaths per capita
                                "</td></tr>");
     }
 }
