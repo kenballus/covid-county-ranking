@@ -102,6 +102,7 @@ def main():
 
     nodes = sorted(nodes, key=lambda node: node.cases, reverse=True)
 
+    # Write the csv
     open("data.csv", "w+").write("\n".join([str(node) for node in nodes]))
 
     # Create the js data file
