@@ -9,7 +9,7 @@ from pandas import read_csv
 STATES = ["Alabama", "American Samoa", "Northern Mariana Islands", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
-
+DEATH_RATE_MIN_SAMPLE_SIZE = 10
 
 class DataNode:
     """ Stores COVID-19 data for one region. """
@@ -21,7 +21,7 @@ class DataNode:
         self.population = 0
         self.cases_per_thousand = 0.0
         self.deaths_per_thousand = 0.0
-        self.death_rate = 0.0
+        self.death_rate = "N/A"
 
     def __str__(self):
         return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(self.cases_per_thousand), str(self.deaths_per_thousand), str(self.death_rate)])
@@ -90,7 +90,8 @@ def main():
         line = line.replace(",", "") # Get rid of ,s in the numbers
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
-        node.death_rate = (node.deaths / node.cases) if node.cases >= 10 else 0.0
+        if node.cases >= DEATH_RATE_MIN_SAMPLE_SIZE:
+            node.death_rate = (node.deaths / node.cases)
 
         node.population = int(populations[node.state][node.county])
         node.cases_per_thousand = node.cases / node.population * 1000
