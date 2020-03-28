@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
     $('select').formSelect();
 
@@ -17,8 +16,8 @@ $(document).ready(() => {
 function renderData(data) {
     $("#main_body").html("")
     for (var i = 0; i < data.length; i++) {
-        $("#main_body").append("<tr><td>"+ (i + 1) + "</td>" +
-                               "<td>" + data[i][0] +  // County
+        $("#main_body").append("<tr><td>" + (i + 1) + "</td>" +
+                               "<td>" + data[i][0] +      // County
                                "</td><td>" + data[i][1] + // State
                                "</td><td>" + data[i][2] + // Population
                                "</td><td>" + data[i][3] + // Cases

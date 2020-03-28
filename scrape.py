@@ -80,16 +80,17 @@ def main():
         # The unknown counties are not relevant to our data set
         if node.county == "Unknown":
             continue
+        if node.county == "":
+            node.county = node.state
 
         line = line.replace(",", "") # Get rid of ,s in the numbers
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
         node.death_rate = node.deaths / node.cases
 
-        if node.county != "":
-            node.population = int(populations[node.state][node.county])
-            node.cases_per_capita = node.cases / node.population
-            node.deaths_per_capita = node.deaths / node.population
+        node.population = int(populations[node.state][node.county])
+        node.cases_per_capita = node.cases / node.population
+        node.deaths_per_capita = node.deaths / node.population
 
         nodes.append(node)
 
