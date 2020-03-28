@@ -21,15 +21,17 @@
 
     <body>
         <h4> All this data came from the <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#g-cases-by-county">New York Times</a> and the <a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html">US Census</a>. </h4>
-        <div class="input-field col s8">
-            <select>
+        
+        <!-- I swapped this out for browser-default because it didn't work on mobile-->
+        <div class="browser-default">
+            <select class="browser-default">
               <option value="" disabled selected>Sort By:</option>
               <option value="3">Cases</option>
               <option value="4">Deaths</option>
               <option value="5">Cases Per Capita</option>
               <option value="6">Deaths Per Capita</option>
             </select>
-          </div>
+        </div>
 
 
         <div id="main_table">
