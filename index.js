@@ -25,6 +25,7 @@ function renderData(data) {
                                "</td><td>" + data[i][4] + // Deaths
                                "</td><td>" + data[i][5] + // Cases per capita
                                "</td><td>" + data[i][6] + // Deaths per capita
+                               "</td><td>" + data[i][7] + // Death rate
                                "</td></tr>");
     }
 }
