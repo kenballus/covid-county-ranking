@@ -22,8 +22,8 @@ function renderData(data) {
                                "</td><td>" + data[i][2] + // Population
                                "</td><td>" + data[i][3] + // Cases
                                "</td><td>" + data[i][4] + // Deaths
-                               "</td><td>" + data[i][5] + // Cases per capita
-                               "</td><td>" + data[i][6] + // Deaths per capita
+                               "</td><td>" + data[i][5] + // Cases per thousand
+                               "</td><td>" + data[i][6] + // Deaths per thousand
                                "</td><td>" + data[i][7] + // Death rate
                                "</td></tr>");
     }

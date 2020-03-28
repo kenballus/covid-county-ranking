@@ -7,7 +7,7 @@ from pandas import read_csv
 INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
 
-data = read_csv(INPUT_FILE, names=["County", "State", "Population", "Cases", "Deaths", "Cases Per Capita", "Deaths Per Capita", "Death Rate"]).fillna("")
+data = read_csv(INPUT_FILE, names=["County", "State", "Population", "Cases", "Deaths", "Cases Per Thousand", "Deaths Per Thousand", "Death Rate"]).fillna("")
 
 with open(OUTPUT_FILE, "w") as f:
     f.write("var table_data = ")

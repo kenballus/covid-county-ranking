@@ -14,12 +14,12 @@ class DataNode:
         self.cases = 0
         self.deaths = 0
         self.population = 0
-        self.cases_per_capita = 0.0
-        self.deaths_per_capita = 0.0
+        self.cases_per_thousand = 0.0
+        self.deaths_per_thousand = 0.0
         self.death_rate = 0.0
 
     def __str__(self):
-        return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(self.cases_per_capita), str(self.deaths_per_capita), str(self.death_rate)])
+        return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(round(self.cases_per_thousand, 3)), str(round(self.deaths_per_thousand, 3)), str(self.death_rate)])
 
 
 def main():
@@ -89,8 +89,8 @@ def main():
         node.death_rate = node.deaths / node.cases
 
         node.population = int(populations[node.state][node.county])
-        node.cases_per_capita = node.cases / node.population
-        node.deaths_per_capita = node.deaths / node.population
+        node.cases_per_thousand = node.cases / node.population * 1000
+        node.deaths_per_thousand = node.deaths / node.population * 1000
 
         nodes.append(node)
 
