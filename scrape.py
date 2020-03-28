@@ -90,7 +90,7 @@ def main():
         line = line.replace(",", "") # Get rid of ,s in the numbers
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
-        node.death_rate = (node.deaths / node.cases)
+        node.death_rate = (node.deaths / node.cases) if node.cases >= 10 else 0.0
 
         node.population = int(populations[node.state][node.county])
         node.cases_per_thousand = node.cases / node.population * 1000
