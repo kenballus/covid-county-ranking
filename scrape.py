@@ -49,7 +49,6 @@ def main():
     # Click the button
     button.click()
 
-
     # Grab the data table
     lines = table.text.split("\n")[1:]
     browser.quit() # Done with this now
@@ -99,7 +98,7 @@ def main():
 
         nodes.append(node)
 
-
+    # Sort by cases
     nodes = sorted(nodes, key=lambda node: node.cases, reverse=True)
 
     # Write the csv
