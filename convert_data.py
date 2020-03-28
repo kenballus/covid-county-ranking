@@ -6,9 +6,7 @@ import pandas as pd
 
 INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
-data = pd.read_csv(INPUT_FILE, names=["State", "County", "Cases", "Deaths", "Population"]).fillna('')
-data["Cases Per Capita"] = data["Cases"] / data["Population"]
-data["Deaths Per Capita"] = data["Deaths"] / data["Population"]
+data = pd.read_csv(INPUT_FILE, names=["County", "State", "Population", "Cases", "Deaths", "Cases Per Capita", "Deaths Per Capita"]).fillna('')
 
 print(data)
 

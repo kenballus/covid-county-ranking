@@ -14,9 +14,16 @@ class DataNode:
         self.cases = 0
         self.deaths = 0
         self.population = 0
+        self.cases_per_capita = 0
+        self.deaths_per_capita = 0
+
+    def set_population(self, population):
+        self.population = population
+        self.cases_per_capita = self.cases / self.population
+        self.deaths_per_capita = self.deaths / self.population
 
     def __str__(self):
-        return ",".join([self.state, self.county, str(self.cases), str(self.deaths), str(self.population)])
+        return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(self.cases_per_capita), str(self.deaths_per_capita)])
 
 
 def main():
@@ -78,11 +85,7 @@ def main():
             continue
 
         if node.county != "":
-            try:
-                node.population = int(populations[node.state][node.county])
-            except:
-                print(node.county, node.state, "isn't here!")
-                pass
+            node.set_population(int(populations[node.state][node.county]))
 
         line = line.replace(",", "")
         node.cases = int(line.split(" ")[0])
@@ -91,7 +94,7 @@ def main():
         nodes.append(node)
 
 
-    nodes = sorted(nodes, key=lambda node: node.cases + node.deaths, reverse=True)
+    nodes = sorted(nodes, key=lambda node: node.cases, reverse=True)
 
     open("data.csv", "w+").write("\n".join([str(node) for node in nodes]))
 
