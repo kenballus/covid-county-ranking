@@ -22,9 +22,9 @@ function renderData(data) {
                                "</td><td>" + data[i][2] + // Population
                                "</td><td>" + data[i][3] + // Cases
                                "</td><td>" + data[i][4] + // Deaths
-                               "</td><td>" + data[i][5] + // Cases per thousand
-                               "</td><td>" + data[i][6] + // Deaths per thousand
-                               "</td><td>" + data[i][7] + // Death rate
+                               "</td><td>" + Number(data[i][5].toFixed(3)) + // Cases per thousand
+                               "</td><td>" + Number(data[i][6].toFixed(3)) + // Deaths per thousand
+                               "</td><td>" + Number(data[i][7].toFixed(3)) + // Death rate
                                "</td></tr>");
     }
 }

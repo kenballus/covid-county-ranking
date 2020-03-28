@@ -19,7 +19,7 @@ class DataNode:
         self.death_rate = 0.0
 
     def __str__(self):
-        return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(round(self.cases_per_thousand, 3)), str(round(self.deaths_per_thousand, 3)), str(round(self.death_rate), 3)])
+        return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(self.cases_per_thousand), str(self.deaths_per_thousand), str(self.death_rate)])
 
 
 def main():
