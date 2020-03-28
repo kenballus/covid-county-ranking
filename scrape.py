@@ -14,8 +14,8 @@ class DataNode:
         self.cases = 0
         self.deaths = 0
         self.population = 0
-        self.cases_per_capita = 0
-        self.deaths_per_capita = 0
+        self.cases_per_capita = 0.0
+        self.deaths_per_capita = 0.0
 
     def set_population(self, population):
         self.population = population
@@ -49,7 +49,7 @@ def main():
     button.click()
 
 
-    # Extract the data from the table
+    # Grab the data table
     lines = table.text.split("\n")[1:]
     browser.quit() # Done with this now
 
@@ -63,6 +63,7 @@ def main():
 
         populations[trio[1]][trio[0]] = trio[2]
 
+    # Extract the data from the table
     nodes = []
     for line in lines:
         orig = line
@@ -84,12 +85,12 @@ def main():
         if node.county == "Unknown":
             continue
 
-        if node.county != "":
-            node.set_population(int(populations[node.state][node.county]))
-
-        line = line.replace(",", "")
+        line = line.replace(",", "") # Get rid of ,s in the numbers
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
+
+        if node.county != "":
+            node.set_population(int(populations[node.state][node.county]))
 
         nodes.append(node)
 

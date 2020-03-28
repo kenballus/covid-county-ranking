@@ -8,8 +8,6 @@ INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
 data = pd.read_csv(INPUT_FILE, names=["County", "State", "Population", "Cases", "Deaths", "Cases Per Capita", "Deaths Per Capita"]).fillna('')
 
-print(data)
-
 with open(OUTPUT_FILE, 'w') as f:
     f.write("var table_data = ")
     f.write(str(data.values.tolist()))
