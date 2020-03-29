@@ -3,9 +3,9 @@
 # Purpose: Grabs the latest COVID-19 data from nytimes.com and formats it into a csv, then into a js list.
 
 from selenium import webdriver
-from pandas import read_csv
 from datetime import datetime
 from re import sub
+from csv import reader
 
 STATES = ["Alabama", "American Samoa", "Northern Mariana Islands", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 INPUT_FILE = "data.csv"
@@ -109,11 +109,7 @@ def main():
     open("data.csv", "w+").write("\n".join([str(node) for node in nodes]))
 
     # Create the js data file
-    data = read_csv(INPUT_FILE, names=["County", "State", "Population", "Cases", "Deaths", "Cases Per Thousand", "Deaths Per Thousand", "Death Rate"]).fillna("")
-    with open(OUTPUT_FILE, "w") as f:
-        f.write("var table_data = ")
-        f.write(str(data.values.tolist()))
-        f.write(";")
+    open(OUTPUT_FILE, "w").write("var table_data = " + str(list(reader(open(INPUT_FILE, "r")))) + ";")
 
     # Update the html so it shows time of last update
     ifile = open(HTML_FILE, "r+")
