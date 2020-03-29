@@ -83,7 +83,7 @@ def main():
                     line = line[c_idx:]
                     break
 
-        # The unknown counties are not relevant to our data set
+        # The unknown counties are not relevant
         if node.county == "Unknown":
             continue
         if node.county == "":
@@ -91,8 +91,8 @@ def main():
 
         line = line.replace(",", "") # Get rid of ,s in the numbers
 
-        node.cases = int(line.split(" ")[0])
-        node.deaths = int(line.split(" ")[1])
+        node.cases = int(line.split()[0])
+        node.deaths = int(line.split()[1])
         if node.cases >= DEATH_RATE_MIN_SAMPLE_SIZE:
             node.death_rate = (node.deaths / node.cases)
 
