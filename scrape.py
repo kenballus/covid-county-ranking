@@ -4,11 +4,13 @@
 
 from selenium import webdriver
 from pandas import read_csv
-
+from datetime import datetime
+from re import sub
 
 STATES = ["Alabama", "American Samoa", "Northern Mariana Islands", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
+HTML_FILE = "index.html"
 DEATH_RATE_MIN_SAMPLE_SIZE = 10
 
 class DataNode:
@@ -113,6 +115,13 @@ def main():
         f.write(str(data.values.tolist()))
         f.write(";")
 
+    # Update the html so it shows time of last update
+    ifile = open(HTML_FILE, "r+")
+    new_html = sub(r"<!--regex-->.*", "<!--regex-->" + str(datetime.now()) + "</h5>", ifile.read())
+    ifile.close()
+
+    ofile = open(HTML_FILE, "w+")
+    ofile.write(new_html)
 
 if __name__ == "__main__":
     main()
