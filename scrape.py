@@ -1,6 +1,6 @@
 # File: scrape.py
 # Author: Ben Kallus
-# Purpose: Grabs the latest COVID-19 data from nytimes.com and formats it into a csv
+# Purpose: Grabs the latest COVID-19 data from nytimes.com and formats it into a csv, then into a js list.
 
 from selenium import webdriver
 from pandas import read_csv
