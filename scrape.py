@@ -88,6 +88,7 @@ def main():
             node.county = node.state
 
         line = line.replace(",", "") # Get rid of ,s in the numbers
+
         node.cases = int(line.split(" ")[0])
         node.deaths = int(line.split(" ")[1])
         if node.cases >= DEATH_RATE_MIN_SAMPLE_SIZE:
