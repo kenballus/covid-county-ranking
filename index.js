@@ -4,8 +4,8 @@ $(document).ready(() => {
     renderData(table_data);
     $('select').on("change", (e) => {
         table_data.sort((a, b) => {
-            if (a[e.target.value] < b[e.target.value]) return  1;
-            if (a[e.target.value] > b[e.target.value]) return -1;
+            if (Number(a[e.target.value]) < Number(b[e.target.value])) return  1;
+            if (Number(a[e.target.value]) > Number(b[e.target.value])) return -1;
             return 0
         })
         renderData(table_data);
