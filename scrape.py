@@ -11,7 +11,7 @@ STATES = ["Alabama", "American Samoa", "Northern Mariana Islands", "Alaska", "Ar
 INPUT_FILE = "data.csv"
 OUTPUT_FILE = "data.js"
 HTML_FILE = "index.html"
-DEATH_RATE_MIN_SAMPLE_SIZE = 10
+DEATH_RATE_MIN_SAMPLE_SIZE = 100
 
 class DataNode:
     """ Stores COVID-19 data for one region. """
@@ -23,7 +23,7 @@ class DataNode:
         self.population = 0
         self.cases_per_thousand = 0.0
         self.deaths_per_thousand = 0.0
-        self.death_rate = "N/A"
+        self.death_rate = 0.0
 
     def __str__(self):
         return ",".join([self.county, self.state, str(self.population), str(self.cases), str(self.deaths), str(self.cases_per_thousand), str(self.deaths_per_thousand), str(self.death_rate)])
@@ -117,7 +117,8 @@ def main():
 
     # Update the html so it shows time of last update
     ifile = open(HTML_FILE, "r+")
-    new_html = sub(r"<!--regex-->.*", "<!--regex-->" + str(datetime.now()) + "</h5>", ifile.read())
+    now = str(datetime.now())
+    new_html = sub(r"<!--regex-->.*", "<!--regex-->" + now[:now.rfind(".") + 1] + "</h5>", ifile.read())
     ifile.close()
 
     ofile = open(HTML_FILE, "w+")

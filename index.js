@@ -4,16 +4,6 @@ $(document).ready(() => {
     renderData(table_data);
     $('select').on("change", (e) => {
         table_data.sort((a, b) => {
-            if (typeof(a[e.target.value]) == "string") {
-              if (typeof(b[e.target.value]) == "string") {
-                return 0;
-              }
-              return  1;
-            }
-            if (typeof(b[e.target.value]) == "string") {
-              return -1;
-            }
-
             if (a[e.target.value] < b[e.target.value]) return  1;
             if (a[e.target.value] > b[e.target.value]) return -1;
             return 0
